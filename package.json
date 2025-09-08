@@ -1,0 +1,24 @@
+{
+  "name": "meeting-bot",
+  "version": "1.0.0",
+  "description": "Бот-ассистент: заходит на встречу, пишет звук, делает транскрипт, проверяет по чеклисту (Gemini), обновляет лид в Битрикс.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "NODE_ENV=development node src/index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.18.0",
+    "axios": "^1.7.2",
+    "dayjs": "^1.11.11",
+    "express": "^4.19.2",
+    "form-data": "^4.0.0",
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "pino": "^9.3.2",
+    "pino-pretty": "^11.2.2",
+    "puppeteer-core": "^22.15.0",
+    "uuid": "^9.0.1"
+  }
+}
